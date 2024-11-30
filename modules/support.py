@@ -24,7 +24,7 @@ from utils.misc import modules_help, prefix, userbot_version, python_version, gi
 
 @Client.on_message(filters.command(["support", "repo"], prefix) & filters.me)
 async def support(_, message: Message):
-    devs = ["@Qbtaumai", "@H4T3H46K3R"]
+    devs = ["@BOBOIBOY_FLAME", "@PROBE_V2"]
     random.shuffle(devs)
 
     commands_count = 0.0
@@ -39,8 +39,8 @@ async def support(_, message: Message):
         "custom_modules</a>\n"
         "License: <a href=https://github.com/The-MoonTg-project/Moon-Userbot/blob/master/LICENSE>GNU GPL v3</a>\n\n"
         "Channel: @moonuserbot\n"
-        "Custom modules: @moonub_modules\n"
-        "Chat [EN]: @moonub_chat\n"
+        "Custom modules: @probe_oxho\n"
+        "Chat [EN]: @prob_oxho\n"
         f"Main developers: {', '.join(devs)}\n\n"
         f"Python version: {python_version}\n"
         f"Modules count: {len(modules_help) / 1}\n"
@@ -53,7 +53,7 @@ async def support(_, message: Message):
 async def version(client: Client, message: Message):
     changelog = ""
     ub_version = ".".join(userbot_version.split(".")[:2])
-    async for m in client.search_messages("moonuserbot", query=f"{userbot_version}."):
+    async for m in client.search_messages("PROBE X BOBOIBOY USERBOT🗿☠️", query=f"{userbot_version}."):
         if ub_version in m.text:
             changelog = m.message_id
 
@@ -68,9 +68,9 @@ async def version(client: Client, message: Message):
 
     await message.reply(
         f"<b>Moon Userbot version: {userbot_version}\n"
-        f"Changelog </b><i><a href=https://t.me/moonuserbot/{changelog}>in channel</a></i>.<b>\n"
+        f"Changelog </b><i><a href=https://t.me/probe_oxho/{changelog}>in channel</a></i>.<b>\n"
         f"Changelog written by </b><i>"
-        f"<a href=https://t.me/Qbtaumai>Abhi</a></i>\n\n"
+        f"<a href=https://t.me/BOBOIBOY_FLAME>Abhi</a></i>\n\n"
         + (
             f"<b>Branch: <a href={remote_url}/tree/{gitrepo.active_branch}>{gitrepo.active_branch}</a>\n"
             if gitrepo.active_branch != "master"
