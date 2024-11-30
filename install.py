@@ -58,10 +58,10 @@ if __name__ == "__main__":
     try:
         app.send_message(
             "me",
-            f"<b>[{datetime.now()}] Moon-Userbot launched! \n"
+            f"<b>[{datetime.now()}] PROBE AAPKI SEVA ME HAAJIR🗿! \n"
             "Channel: @moonuserbot\n"
-            "Custom modules: @moonub_modules\n"
-            "Chat: @moonub_chat\n"
+            "Custom modules: @probe_oxho\n"
+            "Chat: @probe_oxho\n"
             f"For restart, enter:</b>\n"
             f"<code>{restart}</code>",
         )
