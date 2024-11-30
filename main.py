@@ -148,7 +148,7 @@ async def main():
             ],
         )
 
-    logging.info("Moon-Userbot started!")
+    logging.info("PROBE AAPKI SEVA ME HAAJIR VERSION 2.0!")
 
     await idle()
 
